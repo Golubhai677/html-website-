@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Sharing Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff0000;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        header .search-bar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+        }
+        header .user-menu {
+            display: flex;
+            align-items: center;
+        }
+        header .user-menu img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        nav {
+            background-color: #f1f1f1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 18px;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-around;
+        }
+        .video-card {
+            width: 300px;
+            background-color: white;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .video-card img {
+            width: 100%;
+            height: auto;
+        }
+        .video-card .info {
+            padding: 10px;
+        }
+        .video-card .info h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .video-card .info p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MyTube</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="user-menu">
+            <img src="user-avatar.png" alt="User Avatar">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Trending</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">Library</a>
+    </nav>
+
+    <main>
+        <div class="video-card">
+            <img src="thumbnail1.jpg" alt="Video Thumbnail">
+            <div class="info">
+                <h3>Sample Video Title</h3>
+                <p>Channel Name</p>
+                <p>Views · Date</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="thumbnail2.jpg" alt="Video Thumbnail">
+            <div class="info">
+                <h3>Sample Video Title</h3>
+                <p>Channel Name</p>
+                <p>Views · Date</p>
+            </div>
+        </div>
+
+        <!-- Add more video cards as needed -->
+    </main>
+
+</body>
+</html>
